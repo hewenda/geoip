@@ -38,8 +38,13 @@ jobs:
 
       - name: Zip output directory
         run: |
-          cat ./output/ipv4/*.conf > ./output/ipv4.conf
-          cat ./output/ipv6/*.conf > ./output/ipv6.conf
+          for proto in ipv4 ipv6; do
+            echo "protocol static geoip_$proto {" > ./output/$proto.conf
+            echo "$proto;" >> ./output/$proto.conf
+            cat ./output/$proto/*.conf >> ./output/$proto.conf
+            echo "}" >> ./output/$proto.conf
+          done
+          
           zip -r output.zip output/*.conf
         shell: bash
 
