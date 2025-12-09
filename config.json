@@ -18,7 +18,7 @@
         "outputExtension": ".conf",
         "addPrefixInLine": "route ",
         "addSuffixInLine": " via 192.168.88.2;",
-        "excludedList": ["cn", "private"],
+        "excludedList": ["cn", "private", "tor"],
         // "wantedList": ["private"],
         "onlyIPType": "ipv4",
         "oneFilePerList": true
@@ -32,7 +32,7 @@
         "outputExtension": ".conf",
         "addPrefixInLine": "route ",
         "addSuffixInLine": " via 192.168.88.2;",
-        "excludedList": ["cn", "private"],
+        "excludedList": ["cn", "private", "tor"],
         // "wantedList": ["private"],
         "onlyIPType": "ipv6",
         "oneFilePerList": true
