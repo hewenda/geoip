@@ -38,7 +38,9 @@ jobs:
 
       - name: Zip output directory
         run: |
-          zip -r output.zip output/
+          cat ./output/ipv4/*.conf > ./output/ipv4.conf
+          cat ./output/ipv6/*.conf > ./output/ipv6.conf
+          zip -r output.zip output/*.conf
         shell: bash
 
       - name: Upload files to GitHub release
