@@ -6,7 +6,7 @@
       "args": {
         "uri": "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat",
         // "uri": "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat",
-        "wantedList": ["cloudflare", "cloudfront", "facebook", "fastly", "google", "netflix", "telegram", "twitter", "us", "gb", "jp", "tw", "hk"]
+        "wantedList": ["cloudflare", "cloudfront", "facebook", "fastly", "google", "netflix", "telegram", "twitter", "us", "hk"]
       }
     }
   ],
