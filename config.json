@@ -32,7 +32,7 @@
         "outputDir": "./output/ipv6",
         "outputExtension": ".conf",
         "addPrefixInLine": "route ",
-        "addSuffixInLine": " via fe80::7445:d7ff:fed1:ff96;",
+        "addSuffixInLine": " via fc00::7445:d7ff:fed1:ff96;",
         "excludedList": ["cn", "private", "tor"],
         // "wantedList": ["private"],
         "onlyIPType": "ipv6",
